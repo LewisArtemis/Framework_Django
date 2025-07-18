@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title%} {% endblock%}</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            background-color: #0c297aff;
+            color: white;
+            height: 100px;
+            width: 100%;
+        }
+
+        footer{
+            background-color: #0c297aff;
+            color: #ffffffff;
+            padding: 10px;
+            clear: both;
+        }
+
+        .info {
+            background-color: #6cf8d5ff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            width: 30%;
+            height: 230px;
+            display: block;
+            margin: auto;
+        }
+
+        .info ul{
+            list-style-type: none;
+            color: white;
+            text-decoration: none;
+        }
+
+        .title1{
+            text-align: center;
+        }
+
+        .img{
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1>Club de Tennis</h1>
+    </header>
+    <br>
+    <img class="img" src="https://magazine.fortevillageresort.com/wp-content/uploads/2022/01/tennis-770x513.jpg" width="300" height="200">
+        {% block content%}
+        {% endblock%}
+
+    <footer>
+        <p>&copy; 2025 Mi sitio web</p>
+    </footer>
+</body>
+</html>
