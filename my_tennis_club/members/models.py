@@ -10,4 +10,5 @@ class Member(models.Model):
     birthday = models.DateField(null=True)
     email = models.CharField(max_length=255, null= True)
     
-    
+    def __str__(self):
+        return f"{self.firstname} {self.lastname}"
